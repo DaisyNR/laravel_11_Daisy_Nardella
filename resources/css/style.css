@@ -1,0 +1,16 @@
+header{
+    background-image: url(../../public/galaxy.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 12vh;
+}
+.titolo{
+    color: rgb(33, 37, 41);
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px whitesmoke;
+}
+.navbar{
+    height: 9vh;
+    border-bottom: 1px solid whitesmoke;
+}
