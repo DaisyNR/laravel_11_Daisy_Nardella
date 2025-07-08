@@ -1,8 +1,7 @@
-header{
+.bg-custom{
     background-image: url(../../public/galaxy.jpg);
     background-position: center;
     background-size: cover;
-    height: 12vh;
 }
 .titolo{
     color: rgb(33, 37, 41);
@@ -10,6 +9,29 @@ header{
     font-weight: bolder;
     text-shadow: 2px 2px 2px whitesmoke;
 }
+
+.hero{
+    height: 100vh;
+}
+
+.b-custom{
+    background-image: linear-gradient(rgb(43, 48, 53), black);
+    color: whitesmoke;
+}
+
+.title-galaxy{
+    font-size: 4rem;
+    font-weight: 900;
+    background-image: url(../../public/galaxy.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
 .navbar{
     height: 9vh;
     border-bottom: 1px solid whitesmoke;

@@ -10,6 +10,9 @@
           <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
         </li>
         <li class="nav-item px-3">
+          <a class="nav-link" href="{{route('product.sell')}}">Carica un articolo</a>
+        </li>
+        <li class="nav-item px-3">
           <a class="nav-link" href="{{route('product.index')}}">I tuoi annunci</a>
         </li>
       </ul>
