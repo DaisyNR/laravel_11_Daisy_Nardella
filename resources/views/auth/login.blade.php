@@ -1,4 +1,8 @@
 <x-layout>
+
+<x-display-message/>
+<x-display-errors/>
+
     <div class="container-fluid bg-custom vh-100">
         <div class="row justify-content-center">
             <div class="col-12 col-md-5">
@@ -7,7 +11,7 @@
                     @csrf
                     <div class="mb-3">
                         <label for="email" class="form-label">Inserisci la tua mail:</label>
-                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <input name="email" type="email" value="{{old('email')}}" class="form-control" id="email" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Inserisci la tua password:</label>

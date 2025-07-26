@@ -1,6 +1,7 @@
 <x-layout>
 
     <x-display-errors/>
+    <x-display-message/>
 
     <div class="container-fluid bg-custom">
         <div class="row justify-content-center">
@@ -10,11 +11,11 @@
                     @csrf
                     <div class="mb-3">
                         <label for="email" class="form-label">Inserisci la tua mail</label>
-                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <input name="email" type="email" value="{{old('email')}}" class="form-control" id="email" aria-describedby="emailHelp">
                     </div>
                      <div class="mb-3">
                         <label for="name" class="form-label">Inserisci il tuo nome</label>
-                        <input name="name" type="text" class="form-control" id="name">
+                        <input name="name" type="text" value="{{old('name')}}" class="form-control" id="name">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Inserisci una password</label>
