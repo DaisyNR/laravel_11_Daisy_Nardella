@@ -32,6 +32,19 @@
     -webkit-text-stroke: 1px white;
 }
 
+.title-galaxy2{
+    font-size: 4rem;
+    font-weight: 900;
+    background-image: url(../../public/galaxy.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(43, 48, 53, 0.6);
+    -webkit-text-stroke: 1px white;
+}
+
 .navbar{
     height: 9vh;
     border-bottom: 1px solid whitesmoke;

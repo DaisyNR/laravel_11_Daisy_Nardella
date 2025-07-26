@@ -9,12 +9,30 @@
         <li class="nav-item px-3">
           <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
         </li>
+        @guest
+        <li class="nav-item px-3">
+          <a class="nav-link" href="{{route('register')}}">Registrati</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" href="{{route('login')}}">Accedi</a>
+        </li>
+        @endguest
+        @auth
         <li class="nav-item px-3">
           <a class="nav-link" href="{{route('product.sell')}}">Carica un articolo</a>
         </li>
         <li class="nav-item px-3">
           <a class="nav-link" href="{{route('product.index')}}">I tuoi annunci</a>
         </li>
+        <li class="nav-item px-3">
+          <form action="{{ route('logout') }}" method="POST" class="d-inline">
+            @csrf
+            <button type="submit" class="btn btn-link nav-link" style="border: none; background: none;">
+              Logout
+            </button>
+          </form>
+        </li>
+        @endauth
       </ul>
       
     </div>

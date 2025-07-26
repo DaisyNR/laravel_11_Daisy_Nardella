@@ -1,19 +1,8 @@
 <x-layout>
-    @if (session('message'))
-    <div class="alert alert-success">
-        {{ session('message') }}
-    </div>
-@endif
 
-@if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
+<x-display-message/>
+
+<x-display-errors/>
 
     <div class="container-fluid bg-custom">
         <div class="row justify-content-center">
@@ -36,7 +25,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="img" class="form-label">Cosa vuoi vendere?</label>
+                        <label for="img" class="form-label">Carica un'immagine dalla tua libreria:</label>
                         <input name="img" type="file" class="form-control" id="img">
                     </div>
                    
