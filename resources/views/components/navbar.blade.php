@@ -19,6 +19,9 @@
         @endguest
         @auth
         <li class="nav-item px-3">
+          <a class="nav-link" href="#">Benvenut@ {{Auth::user()->name}}</a>
+        </li>
+        <li class="nav-item px-3">
           <a class="nav-link" href="{{route('product.sell')}}">Carica un articolo</a>
         </li>
         <li class="nav-item px-3">
