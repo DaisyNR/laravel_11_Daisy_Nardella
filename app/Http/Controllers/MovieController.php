@@ -33,4 +33,16 @@ class MovieController extends Controller
     public function show(Movie $movie){
         return view('movie.show',compact('movie'));
     }
+
+    public function edit(Movie $movie){
+        return view('movie.edit',compact('movie'));
+    }
+
+    public function update(Movie $movie){
+        return view('movie.update',compact('movie'));
+    }
+
+    public function delete(Movie $movie){
+        return view('movie.delete',compact('movie'));
+    }
 }

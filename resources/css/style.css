@@ -15,57 +15,57 @@
 }
 
 .titolo{
-    letter-spacing: 5px;
-    z-index: 1;
-    position: relative;
-    color: rgb(255, 255, 255);
-    font-size: 5rem;
-    font-weight: bolder;
-    text-shadow:
-        0 0 5px white,
-        0 0 10px rgb(98, 150, 180),
-        0 0 20px rgb(117, 162, 181),
-        0 0 30px white,
-        0 0 40px rgb(117, 162, 181);
+  letter-spacing: 5px;
+  z-index: 1;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  font-weight: bolder;
+  text-shadow:
+  0 0 5px white,
+  0 0 10px rgb(98, 150, 180),
+  0 0 20px rgb(117, 162, 181),
+  0 0 30px white,
+  0 0 40px rgb(117, 162, 181);
 }
 
 .hero{
-    height: 100vh;
+  height: 100vh;
 }
 
 .b-custom{
-    height: 70px;
-    width: 400px;
-    transition: 0.5s;
-background: rgba(177, 177, 177, 0.1);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4px);
--webkit-backdrop-filter: blur(4px);
-border: 1px solid rgba(177, 177, 177, 0.15);
-color: whitesmoke;
+  height: 70px;
+  width: 400px;
+  transition: 0.5s;
+  background: rgba(177, 177, 177, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(177, 177, 177, 0.15);
+  color: whitesmoke;
 }
 
 .b-custom:hover{
-    background: whitesmoke(117, 118, 160, 0.24);
-border-radius: 16px;
-box-shadow: 0 4px 30px whitesmoke;
-backdrop-filter: blur(8.3px);
--webkit-backdrop-filter: blur(8.3px);
-border: 1px solid whitesmoke(21, 25, 140, 0.21);
-    color: whitesmoke(0, 0, 0, 0.1);
+  background: whitesmoke(117, 118, 160, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px whitesmoke;
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border: 1px solid whitesmoke(21, 25, 140, 0.21);
+  color: whitesmoke(0, 0, 0, 0.1);
 }
 
 .title-galaxy2 {
-    color: whitesmoke;
-    font-weight: bolder;
-    font-size: 900;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 900;
   overflow: hidden;
   white-space: nowrap;
   border-right: .15em solid #fff;
   animation:
-    typing 3s steps(20, end),
-    blink-caret .75s step-end infinite;
+  typing 3s steps(20, end),
+  blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
@@ -78,21 +78,32 @@ border: 1px solid whitesmoke(21, 25, 140, 0.21);
 }
 
 .navbar a{
-    border-bottom: 2px solid transparent;
-    transition: 0.3s;
-    font-size: 18px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+  font-size: 18px;
 }
 
 .navbar a:hover{
-    border-bottom: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 .navbar, .glass-card{
-background: rgba(177, 177, 177, 0.1);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4px);
--webkit-backdrop-filter: blur(4px);
-border: 1px solid rgba(177, 177, 177, 0.15);
+  background: rgba(177, 177, 177, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(177, 177, 177, 0.15);
 }
 
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card {
+  height: 22rem;
+}

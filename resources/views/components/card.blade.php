@@ -4,6 +4,6 @@
         <h5 class="card-title">{{$movie->title}}</h5>
         <h6 class="card-subtitle mb-3">By {{$movie->director}}</h6>
         <p class="card-text">{{$movie->plot}}</p>
-        <a href="{{route('movie.show',compact('movie'))}}" class="btn btn-light btn-sm mt-auto ">Read more</a>
+        <a href="{{route('movie.show', compact('movie'))}}" class="btn btn-light btn-sm mt-auto">Read more</a>
     </div>
 </div>
