@@ -3,11 +3,6 @@
   font-optical-sizing: auto;
 }
 
-/* .bg-custom{
-    background-image: url(../../public/galaxy.jpg);
-    background-position: center;
-    background-size: cover;
-} */
 
 .bg-universe {
   display: block;
@@ -81,19 +76,6 @@ border: 1px solid whitesmoke(21, 25, 140, 0.21);
   from, to { border-color: transparent; }
   50% { border-color: #fff; }
 }
-
-/* .title-galaxy2{
-    font-size: 4rem;
-    font-weight: 900;
-    background-image: url(../../public/galaxy.jpg);
-    background-size: cover;
-    background-position: center;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: rgba(43, 48, 53, 0.6);
-    -webkit-text-stroke: 1px white;
-} */
 
 .navbar a{
     border-bottom: 2px solid transparent;

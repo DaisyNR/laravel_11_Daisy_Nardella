@@ -17,6 +17,9 @@
                 <x-card :movie="$movie"/>
             </div>
             @empty
+            <div class="col-12">
+                <h2>No articles yet, be the first to post one!</h2>
+            </div>
             @endforelse
         </div>
     </div>

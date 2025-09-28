@@ -29,4 +29,8 @@ class MovieController extends Controller
         $movies = Movie::all();
         return view('movie.index', ['movies'=>$movies]);
     }
+
+    public function show(Movie $movie){
+        return view('movie.show',compact('movie'));
+    }
 }
