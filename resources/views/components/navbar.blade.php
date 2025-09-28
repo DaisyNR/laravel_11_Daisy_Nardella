@@ -8,33 +8,12 @@
         <li class="nav-item px-3">
           <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
         </li>
-        @guest
         <li class="nav-item px-3">
-          <a class="nav-link" href="{{route('register')}}">Register</a>
+          <a class="nav-link" href="{{route('movie.index')}}">All articles</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link" href="{{route('login')}}">Login</a>
+          <a class="nav-link" href="{{route('movie.create')}}">Upload article</a>
         </li>
-        @endguest
-        @auth
-        <li class="nav-item px-3">
-          <a class="nav-link" href="#">Welcome back {{Auth::user()->name}}</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" href="{{route('product.sell')}}">Upload an article</a>
-        </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" href="{{route('product.index')}}">Your articles</a>
-        </li>
-        <li class="nav-item px-3">
-          <form action="{{ route('logout') }}" method="POST" class="d-inline">
-            @csrf
-            <button type="submit" class="btn btn-link nav-link" style="border: none; background: none;">
-              Logout
-            </button>
-          </form>
-        </li>
-        @endauth
       </ul>
       
     </div>

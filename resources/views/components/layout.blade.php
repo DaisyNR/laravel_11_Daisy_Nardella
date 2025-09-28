@@ -13,6 +13,7 @@
 <body>
 
     <x-navbar/>
+    <canvas class="bg-universe"></canvas>
     {{$slot}}
 
     

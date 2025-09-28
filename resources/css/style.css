@@ -105,7 +105,7 @@ border: 1px solid whitesmoke(21, 25, 140, 0.21);
     border-bottom: 2px solid white;
 }
 
-.navbar, .login-card{
+.navbar, .glass-card{
 background: rgba(177, 177, 177, 0.1);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

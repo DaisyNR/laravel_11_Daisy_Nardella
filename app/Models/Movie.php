@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class Movie extends Model
 {
     protected $fillable = [
-        'name',
-        'description',
-        'price',
+        'title',
+        'director',
+        'plot',
         'img'
     ];
 }
