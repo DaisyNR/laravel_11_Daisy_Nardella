@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
-use Illuminate\Http\Request;
+use App\Http\Requests\MovieRequest;
 
 
 class MovieController extends Controller
@@ -13,16 +13,25 @@ class MovieController extends Controller
         return view('movie.create', compact('movies'));
     }
 
-    public function store(Request $request){
+    public function store(MovieRequest $request){
 
-        $movie = Movie::create([
-            'title'=>$request->title,
-            'director'=>$request->director,
-            'plot'=>$request->plot,
-            'img'=>$request->file('img')->store('images','public')
+        $title = $request->title;
+        $director = $request->director;
+        $plot = $request->plot;
+        $img=null;
+        
+        if ($request->file('img')) {
+            $img = $request->file('img')->store('img', 'public');
+        }
+
+        Movie::create([
+            'title'=>$title,
+            'director'=>$director,
+            'plot'=>$plot,
+            'img'=>$img
         ]);
 
-        return redirect()->route('movie.index')->with('successMessage','You successfully posted your article!');
+        return redirect()->route('movie.index')->with('message','You successfully posted your article!');
     }
 
     public function index(){

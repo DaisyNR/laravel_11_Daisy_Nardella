@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProductRequest extends FormRequest
+class MovieRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,21 +22,18 @@ class ProductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required | min:3',
-            'description' => 'required | min:8',
-            'price' => 'required'
+            'title' => 'required',
+            'director' => 'required',
+            'plot' => 'required',
         ];
     }
 
     public function messages(): array
     {
         return [
-            'name.required' => 'Devi inserire il nome del prodotto',
-            'description.required' => 'Devi inserire la descrizione del prodotto',
-            'price.required' => 'Devi inserire il prezzo del prodotto',
-            'name.min' => 'Il nome deve contenere almeno 3 caratteri',
-            'description.min' => 'Il messaggio deve contenere almeno 8 caratteri'
+            'title.required' => 'Title is required',
+            'director.required' => 'Who directed this film?',
+            'plot.required' => 'A short summary will do',
         ];
     }
-
 }
