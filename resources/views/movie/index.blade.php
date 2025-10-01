@@ -9,7 +9,7 @@
             </div>
         </div>
     </header>
-
+<x-display-message></x-display-message>
     <div class="container-fluid">
         <div class="div row">
             @forelse($movies as $movie)

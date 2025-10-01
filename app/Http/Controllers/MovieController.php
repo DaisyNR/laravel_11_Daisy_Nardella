@@ -23,13 +23,14 @@ class MovieController extends Controller
         if ($request->file('img')) {
             $img = $request->file('img')->store('img', 'public');
         }
-
+        
         Movie::create([
             'title'=>$title,
             'director'=>$director,
             'plot'=>$plot,
             'img'=>$img
         ]);
+
 
         return redirect()->route('movie.index')->with('message','You successfully posted your article!');
     }

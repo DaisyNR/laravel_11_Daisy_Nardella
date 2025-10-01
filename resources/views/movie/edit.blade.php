@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
                 <h1 class="text-center title-galaxy2 my-3">EDIT</h1>
-                <form class="rounded-4 p-3 glass-card my-2" action="{{route('movie.create')}}" method="POST" enctype="multipart/form-data">
+                <form class="rounded-4 p-3 glass-card my-2" action="{{route('movie.edit')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
                         <label for="title" class="form-label">Title:</label>
